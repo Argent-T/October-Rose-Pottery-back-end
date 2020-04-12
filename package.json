@@ -1,0 +1,26 @@
+{
+  "name": "october-rose-pottery",
+  "version": "1.0.0",
+  "description": "e-commerce site for my parents to sell the pottery they make in their home studio",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Argent-T/October-Rose-Pottery.git"
+  },
+  "keywords": [],
+  "author": "Thomas Argent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Argent-T/October-Rose-Pottery/issues"
+  },
+  "homepage": "https://github.com/Argent-T/October-Rose-Pottery#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7",
+    "nodemon": "^2.0.3"
+  }
+}
