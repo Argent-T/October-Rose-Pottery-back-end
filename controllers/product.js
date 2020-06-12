@@ -8,7 +8,9 @@ const {errorHandler} = require ('../helpers/dbErrorHandler');
 
 // Gets product data whenever 'productById' is called in the products routes
 exports.productById = (req,res, next, id) =>{
-    Product.findById(id).exec((err, product)=>{
+    Product.findById(id)
+    .populate("category")
+    .exec((err, product)=>{
         if(err || !product) {
             return res.status(400).json({
                 error: 'Product not found'
