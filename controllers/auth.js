@@ -57,7 +57,7 @@ exports.requireSignin = expressJwt({
     secret: process.env.JWT_SECRET,
     userProperty: 'auth',
      // restrict allowed algorithms
-  algorithms: ['RS256']
+  algorithms: ['HS256']
 });
 
 exports.isAuth = (req, res, next) => {
